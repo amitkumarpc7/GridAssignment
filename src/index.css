@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 630px;
+  height: auto; /* Auto height to adjust based on content */
+  background-color: #242424;
+  border-radius: 8px; /* Optional: Add some rounded corners */
+  padding: 20px; /* Optional: Add some padding */
+}
+
+.row {
+  display: flex;
+}
+
+.square {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.console {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 10px;
+  margin-top: 10px;
+  width: 640px;
+  /* border: 2px solid gray; */
+  border-radius: 8px;
+}
+.icon-container {
+  position: relative; /* Position for hover text */
+  cursor: pointer;
+}
+
+.hover-text {
+  color: transparent;
+  font-size: 14px; 
+  transition: color 0.3s ease;
+  position: absolute; 
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap; 
+}
+
+.icon-container:hover .hover-text {
+  color: white; 
+}
+span {
+  color: white;
+  font-size: 30px;
+  transition: color 0.3s ease;
+}
+span:hover {
+  color: gray;
+}
